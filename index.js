@@ -1,5 +1,6 @@
 import express from 'express';
 import { hotels as hotelsList } from './hotels.js';
+import cors form cors;
 const app = express();
 
 app.use(express.json());
