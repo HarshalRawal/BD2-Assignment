@@ -1,9 +1,10 @@
 import express from 'express';
-import { hotels, hotels as hotelsList } from './hotels.js';
+import { hotels as hotelsList } from './hotels.js';
 const app = express();
 
 app.use(express.json());
 
+app.use(cors());
 const PORT = 3000;
 //Endpoint 1: Get the hotels sorted by pricing
 
